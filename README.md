@@ -13,6 +13,10 @@ Client application must be registered with Eko first. These values, `redirect_ur
 1. Edit the `client_id`, `client_secret`, `redirect_uri` and `eko_uri` in `/examples/app.php`.
 2. Go to `http://localhost/path/to/project/examples/app.php` via the browser
 
+### Installation
+```bash
+composer require ekoapp/eko-oauth-sdk
+```
 
 ### Usage
 
@@ -20,6 +24,8 @@ See `examples/app.php` for the complete flow of usage.
 
 #### 1. Initialization
 ```php
+use EkoApp\OAuth\EkoOAuthClient;
+
 $client = new EkoOAuthClient();
 $client->setClientId(CLIENT_ID);
 $client->setClientSecret(CLIENT_SECRET);
