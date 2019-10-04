@@ -216,7 +216,7 @@ class OAuthToken
      */
     private function setExpiresIn($expiresIn)
     {
-        $this->expiresIn = new \DateTime($expiresIn);
+        $this->expiresIn = $expiresIn;
     }
 
     /**
